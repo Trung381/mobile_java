@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
                 "024.38522028",
                 "Tầng 2, Nhà C1, Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội",
                 "cntt@tlu.edu.vn",
-                R.drawable.ic_department
+                R.drawable.img_department
         ));
 
         departmentList.add(new Department(
@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
                 "024.35638252",
                 "Tầng 6, Nhà A5, Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội",
                 "ktql@tlu.edu.vn",
-                R.drawable.ic_department
+                R.drawable.img_department2
         ));
 
         departmentList.add(new Department(
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                 "024.35632211",
                 "Tầng 3, Nhà A1, Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội",
                 "ktxd@tlu.edu.vn",
-                R.drawable.ic_department
+                R.drawable.img_department
         ));
 
         departmentList.add(new Department(
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
                 "024.35632211",
                 "Tầng 1, Nhà A1, Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội",
                 "daotao@tlu.edu.vn",
-                R.drawable.ic_department
+                R.drawable.img_department
         ));
 
         departmentList.add(new Department(
@@ -194,7 +194,7 @@ public class MainActivity extends AppCompatActivity {
                 "024.35638364",
                 "Tầng 1, Nhà A1, Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội",
                 "ctsv@tlu.edu.vn",
-                R.drawable.ic_department
+                R.drawable.img_department
         ));
     }
 
@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
                 "Khoa Công nghệ thông tin",
                 "0912345678",
                 "tungnt@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person
         ));
 
         staffList.add(new Staff(
@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
                 "Khoa Công nghệ thông tin",
                 "0923456789",
                 "huongpt@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
 
         staffList.add(new Staff(
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
                 "Khoa Kinh tế và Quản lý",
                 "0934567890",
                 "namtv@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
 
         staffList.add(new Staff(
@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                 "Khoa Kinh tế và Quản lý",
                 "0945678901",
                 "minhlt@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
 
         staffList.add(new Staff(
@@ -244,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
                 "Khoa Kỹ thuật xây dựng",
                 "0956789012",
                 "haidv@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
 
         staffList.add(new Staff(
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity {
                 "Phòng Đào tạo",
                 "0967890123",
                 "lannt@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
 
         staffList.add(new Staff(
@@ -262,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
                 "Phòng Công tác sinh viên",
                 "0978901234",
                 "tuanvd@tlu.edu.vn",
-                R.drawable.ic_person
+                R.drawable.img_person2
         ));
     }
 }
