@@ -38,7 +38,6 @@ public class StaffAdapter extends RecyclerView.Adapter<StaffAdapter.StaffViewHol
         Staff staff = staffList.get(position);
         holder.bind(staff);
 
-        // Set click listener to open detail activity
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,7 +58,6 @@ public class StaffAdapter extends RecyclerView.Adapter<StaffAdapter.StaffViewHol
         return staffList.size();
     }
 
-    // Filter method for search functionality
     public void filter(String text) {
         staffList.clear();
         if (text.isEmpty()) {

@@ -118,15 +118,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/text_secondary"
                     android:layout_marginStart="8dp"/>
-
-                <ImageButton
-                    android:id="@+id/callButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_menu_call"
-                    android:contentDescription="Call"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:padding="8dp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -152,15 +143,6 @@
                     android:textSize="16sp"
                     android:textColor="@color/text_secondary"
                     android:layout_marginStart="8dp"/>
-
-                <ImageButton
-                    android:id="@+id/emailButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_dialog_email"
-                    android:contentDescription="Email"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:padding="8dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

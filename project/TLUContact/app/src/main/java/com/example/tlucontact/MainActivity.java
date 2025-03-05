@@ -21,11 +21,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnSort;
     private boolean isSortedAscending = true;
 
-    // Lists to hold our data
     private List<Department> departmentList;
     private List<Staff> staffList;
 
-    // Adapters
     private DepartmentAdapter departmentAdapter;
     private StaffAdapter staffAdapter;
 
@@ -34,28 +32,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Initialize UI components
+        // liên kết biến với các view
         recyclerView = findViewById(R.id.recyclerView);
         btnDepartments = findViewById(R.id.btnDepartments);
         btnStaff = findViewById(R.id.btnStaff);
         searchView = findViewById(R.id.searchView);
         btnSort = findViewById(R.id.btnSort);
 
-        // Set up RecyclerView
+        // hiển thị theo chiều học
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        // Initialize data
+        // tạo dữ liệu mẫu
         initializeDepartmentData();
         initializeStaffData();
 
-        // Set up adapters
+        // tạo adapter với context chuẩn bị dữ liệu cho recyclerView
         departmentAdapter = new DepartmentAdapter(departmentList, this);
         staffAdapter = new StaffAdapter(staffList, this);
 
-        // Set default view to departments
+        // set hiển thị mặc định với departmentAdapter
         recyclerView.setAdapter(departmentAdapter);
 
-        // Set up button click listeners
+        // hàm click vào để hiển thị department
         btnDepartments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // hàm click vào để hiển thị staff
         btnStaff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,10 +73,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set up search functionality
+        // hàm tìm kiếm, gọi đến hàm filter được định nghĩa trong DepartmentAdapter và StaffAdapter
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                // không cần xử lý, vì dữ liệu được lọc theo mỗi ký tự nhập vào
+                // trả về false sẽ thực hiện hành động mặc định của searchView
                 return false;
             }
 
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set up sort functionality
+        // xử lý sự kiện click vào nút sort
         btnSort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -153,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
         staffAdapter.notifyDataSetChanged();
     }
 
-    // Initialize sample department data
     private void initializeDepartmentData() {
         departmentList = new ArrayList<>();
 
@@ -198,7 +198,6 @@ public class MainActivity extends AppCompatActivity {
         ));
     }
 
-    // Initialize sample staff data
     private void initializeStaffData() {
         staffList = new ArrayList<>();
 

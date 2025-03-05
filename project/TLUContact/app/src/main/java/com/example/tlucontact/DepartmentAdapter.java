@@ -72,7 +72,6 @@ public class DepartmentAdapter extends RecyclerView.Adapter<DepartmentAdapter.De
         return departmentList.size();
     }
 
-    // Filter method for search functionality
     public void filter(String text) {
         departmentList.clear();
         if (text.isEmpty()) {

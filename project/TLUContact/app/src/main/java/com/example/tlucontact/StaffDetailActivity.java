@@ -15,14 +15,12 @@ public class StaffDetailActivity extends AppCompatActivity {
     private ImageView imageView;
     private TextView nameTextView, positionTextView, departmentTextView, phoneTextView, emailTextView;
     private Button backButton;
-    private ImageButton callButton, emailButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff_detail);
 
-        // Initialize UI components
         imageView = findViewById(R.id.detailImageView);
         nameTextView = findViewById(R.id.detailNameTextView);
         positionTextView = findViewById(R.id.detailPositionTextView);
@@ -30,19 +28,15 @@ public class StaffDetailActivity extends AppCompatActivity {
         phoneTextView = findViewById(R.id.detailPhoneTextView);
         emailTextView = findViewById(R.id.detailEmailTextView);
         backButton = findViewById(R.id.backButton);
-        callButton = findViewById(R.id.callButton);
-        emailButton = findViewById(R.id.emailButton);
 
-        // Get data from intent
         Intent intent = getIntent();
         String name = intent.getStringExtra("NAME");
         String position = intent.getStringExtra("POSITION");
         String department = intent.getStringExtra("DEPARTMENT");
         String phone = intent.getStringExtra("PHONE");
         String email = intent.getStringExtra("EMAIL");
-        int imageResource = intent.getIntExtra("IMAGE", R.drawable.ic_person);
+        int imageResource = intent.getIntExtra("IMAGE", R.drawable.img_person);
 
-        // Set data to views
         nameTextView.setText(name);
         positionTextView.setText(position);
         departmentTextView.setText(department);
@@ -50,31 +44,10 @@ public class StaffDetailActivity extends AppCompatActivity {
         emailTextView.setText(email);
         imageView.setImageResource(imageResource);
 
-        // Set up back button
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
-            }
-        });
-
-        // Set up call button
-        callButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:" + phone));
-                startActivity(callIntent);
-            }
-        });
-
-        // Set up email button
-        emailButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-                emailIntent.setData(Uri.parse("mailto:" + email));
-                startActivity(emailIntent);
             }
         });
     }
