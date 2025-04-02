@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "581304348806",
+    "project_id": "authen-bcd58",
+    "storage_bucket": "authen-bcd58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581304348806:android:fc75b1b30e7f1fd90ea107",
+        "android_client_info": {
+          "package_name": "com.example.firebaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM_b9OsctEHabxGSGHcO_T0HPz6qymixA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "259083937590",
+    "firebase_url": "https://t-contact-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "t-contact",
+    "storage_bucket": "t-contact.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259083937590:android:1a7177f7503658837cb597",
+        "android_client_info": {
+          "package_name": "com.example.tlucontact"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe6Gi1l9-L_yrUkhhXtx7kkA89HhKWL68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
