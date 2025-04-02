@@ -1,0 +1,8 @@
+<resources>
+    <!-- Chủ đề của ứng dụng -->
+    <style name="Theme.MyApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+</resources>
